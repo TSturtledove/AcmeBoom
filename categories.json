@@ -1,0 +1,12 @@
+{
+    "categories": [
+        {
+            "id": 0,
+            "name": "Trees"
+        },
+        {
+            "id": 1,
+            "name": "Shrubbery"
+        }
+    ]
+}

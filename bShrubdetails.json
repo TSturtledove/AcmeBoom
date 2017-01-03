@@ -1,0 +1,74 @@
+{
+  "shrubDetails": [{
+    "great_basin_sagebrush":{
+      "id": 0,
+      "type": 0,
+      "name": "Great Basin Sagebrush",
+      "description": "Great Basin Sagebrush info goes here."
+    }
+  },
+  {
+    "firethorn":{
+      "id": 1,
+      "type": 0,
+      "name": "Firethorn",
+      "description": "Firethorn info"
+    }
+  },
+  {
+    "yucca":{
+      "id": 2,
+      "type": 0,
+      "name": "Yucca",
+      "description": "Yucca info"
+    }
+  },
+  {
+    "witch_hazel":{
+      "id": 3,
+      "type": 1,
+      "name": "Witch Hazel",
+      "description": "Witch Hazel goes here info"
+    }
+  },
+  {
+    "lavender":{
+      "id": 4,
+      "type": 1,
+      "name": "Lavender",
+      "description": "Lavender info"
+    }
+  },
+  {
+    "hyssop":{
+      "id": 5,
+      "type": 1,
+      "name": "Hyssop",
+      "description": "Hyssop info"
+    }
+  },
+  {
+    "rose":{
+      "id": 6,
+      "type": 2,
+      "name": "Rose",
+      "description": "Rose info"
+    }
+  },
+  {
+    "lilac":{
+      "id": 7,
+      "type": 2,
+      "name": "Lilac",
+      "description": "Lilac info"
+    }
+  },
+  {
+    "hydrangea":{
+      "id": 8,
+      "type": 2,
+      "name": "Hydrangea",
+      "description": "Hydrangea info"
+    }
+  }]
+}

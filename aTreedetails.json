@@ -1,0 +1,74 @@
+{
+  "treeDetails": [{
+    "lodgepole_pine":{
+      "id": 0,
+      "type": 0,
+      "name": "Lodgepole Pine",
+      "description": "Lodgepole Pine info"
+    }
+  },
+  {
+    "southwestern_white_pine":{
+      "id": 1,
+      "type": 0,
+      "name": "Southwestern White Pine",
+      "description": "Southwestern White Pine info"
+    }
+  },
+  {
+    "california_redwood":{
+      "id": 2,
+      "type": 0,
+      "name": "California Redwood",
+      "description": "California Redwood info"
+    }
+  },
+  {
+    "maple":{
+      "id": 3,
+      "type": 1,
+      "name": "Maple",
+      "description": "Maple info"
+    }
+  },
+  {
+    "oak":{
+      "id": 4,
+      "type": 1,
+      "name": "Oak",
+      "description": "Oak info"
+    }
+  },
+  {
+    "redbud":{
+      "id": 5,
+      "type": 1,
+      "name": "Redbud",
+      "description": "Redbud info"
+    }
+  },
+  {
+    "japanese_maple":{
+      "id": 6,
+      "type": 2,
+      "name": "Japanese Maple",
+      "description": "Japanese Maple info"
+    }
+  },
+  {
+    "dogwood":{
+      "id": 7,
+      "type": 2,
+      "name": "Dogwood",
+      "description": "Dogwood info"
+    }
+  },
+  {
+    "tulip_tree":{
+      "id": 8,
+      "type": 2,
+      "name": "Tulip Tree",
+      "description": "Tulip Tree info"
+    }
+  }]
+}

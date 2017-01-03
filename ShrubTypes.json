@@ -1,0 +1,16 @@
+{
+  "shrubTypes": [
+    {
+      "id": 0,
+      "name": "Evergreen"
+    },
+    {
+      "id": 1,
+      "name": "Deciduous"
+    },
+    {
+      "id": 2,
+      "name": "Ornamental"
+    }
+  ]
+}
