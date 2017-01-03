@@ -1,0 +1,146 @@
+{
+  "Details": [{
+    "great_basin_sagebrush":{
+      "product_id": 0,
+      "type_id": 0,
+      "name": "Great Basin Sagebrush",
+      "description": "Great Basin Sagebrush info goes here."
+    }
+  },
+  {
+    "firethorn":{
+      "product_id": 1,
+      "type_id": 0,
+      "name": "Firethorn",
+      "description": "Firethorn info"
+    }
+  },
+  {
+    "yucca":{
+      "product_id": 2,
+      "type_id": 0,
+      "name": "Yucca",
+      "description": "Yucca info"
+    }
+  },
+  {
+    "witch_hazel":{
+      "product_id": 3,
+      "type_id": 1,
+      "name": "Witch Hazel",
+      "description": "Witch Hazel goes here info"
+    }
+  },
+  {
+    "lavender":{
+      "product_id": 4,
+      "type_id": 1,
+      "name": "Lavender",
+      "description": "Lavender info"
+    }
+  },
+  {
+    "hyssop":{
+      "product_id": 5,
+      "type_id": 1,
+      "name": "Hyssop",
+      "description": "Hyssop info"
+    }
+  },
+  {
+    "rose":{
+      "product_id": 6,
+      "type_id": 2,
+      "name": "Rose",
+      "description": "Rose info"
+    }
+  },
+  {
+    "lilac":{
+      "product_id": 7,
+      "type_id": 2,
+      "name": "Lilac",
+      "description": "Lilac info"
+    }
+  },
+  {
+    "hydrangea":{
+      "product_id": 8,
+      "type_id": 2,
+      "name": "Hydrangea",
+      "description": "Hydrangea info"
+    }
+  },
+  {
+    "lodgepole_pine":{
+      "product_id": 9,
+      "type_id": 3,
+      "name": "Lodgepole Pine",
+      "description": "Lodgepole Pine info"
+    }
+  },
+  {
+    "southwestern_white_pine":{
+      "product_id": 10,
+      "type": 3,
+      "name": "Southwestern White Pine",
+      "description": "Southwestern White Pine info"
+    }
+  },
+  {
+    "california_redwood":{
+      "product_id": 11,
+      "type": 3,
+      "name": "California Redwood",
+      "description": "California Redwood info"
+    }
+  },
+  {
+    "maple":{
+      "product_id": 12,
+      "type": 4,
+      "name": "Maple",
+      "description": "Maple info"
+    }
+  },
+  {
+    "oak":{
+      "product_id": 13,
+      "type": 4,
+      "name": "Oak",
+      "description": "Oak info"
+    }
+  },
+  {
+    "redbud":{
+      "product_id": 14,
+      "type": 4,
+      "name": "Redbud",
+      "description": "Redbud info"
+    }
+  },
+  {
+    "japanese_maple":{
+      "product_id": 15,
+      "type": 5,
+      "name": "Japanese Maple",
+      "description": "Japanese Maple info"
+    }
+  },
+  {
+    "dogwood":{
+      "product_id": 16,
+      "type": 5,
+      "name": "Dogwood",
+      "description": "Dogwood info"
+    }
+  },
+  {
+    "tulip_tree":{
+      "product_id": 17,
+      "type": 5,
+      "name": "Tulip Tree",
+      "description": "Tulip Tree info"
+    }
+  }]
+}
