@@ -48,10 +48,14 @@ Promise.all([engage01, engage02, engage03])
 
 function populate() {
   console.log(details)
-  for (var prop in details[0]) {
-  if( details[0].hasOwnProperty( prop ) ) {
-    console.log("obj." + prop + " = " + details[0][prop].name);
-  }
-}
+  for(var t=0; t<details.length; t++){
+    for (var prop in details[t]) {
+      if( details[t].hasOwnProperty( prop ) ) {
+        var info = details[t][prop]
+        console.log("does this work " + prop + " = " + info.name);
+        console.log(info.type_id);
+      }
+    }
   // $("#printHere").html(`<div class=""><h4>${details[0].great_basin_sagebrush.name}`)
+  }
 }
