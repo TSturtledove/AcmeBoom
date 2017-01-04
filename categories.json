@@ -2,11 +2,11 @@
     "categories": [
         {
             "category_id": 0,
-            "name": "Trees"
+            "name": "Shrubbery"
         },
         {
             "category_id": 1,
-            "name": "Shrubbery"
+            "name": "Trees"
         }
     ]
 }

@@ -16,102 +16,42 @@ var engage01 = new Promise(function(resolve, reject){
 
 var engage02 = new Promise(function(resolve, reject){
   var request2 = new XMLHttpRequest()
-  request1.addEventListener("load", function() {
+  request2.addEventListener("load", function() {
     var list = JSON.parse(request2.responseText).Types
     resolve(list)
   })
-  request1.open("GET", "Types.json")
-  request1.send()
+  request2.open("GET", "Types.json")
+  request2.send()
 })
 
 
 var engage03 = new Promise(function(resolve, reject){
   var request3 = new XMLHttpRequest()
-  request1.addEventListener("load", function() {
+  request3.addEventListener("load", function() {
     var list = JSON.parse(request3.responseText).details
     resolve(list)
   })
-  request1.open("GET", "details.json")
-  request1.send()
-})
-
-
-
-
-
-var promise1 = new Promise(function(resolve, reject){
-  var request1 = new XMLHttpRequest()
-  request1.addEventListener("load", function() {
-    var list = JSON.parse(request1.responseText).suspects
-    resolve(list)// pass the info we're waiting for to the resolve
-  })
-  request1.open("GET", "suspects.json")
-  request1.send()
-})
-
-console.log("typeof promise1", typeof promise1)
-
-/////////////////////////////////////////////////////
-///Single Promise////////////////////////////////////
-
-promise1
-  .then(
-  function(val){
-    suspects = val
-    console.log("promise one resolved, ", suspects)
-    return promise2
-  })
-  .then(
-    function(val) {
-      weapons = val
-      console.log("promise two resolved, ", weapons)
-      return promise3
-    })
-  .then(
-    function(val) {
-      rooms = val
-      console.log("promise three resolved, ", rooms)
-    })
-  .then(findGuess)
-  .then(function(){
-    console.log("you can chain 'thens' ")
-  })
-
-var promise2 = new Promise(function(resolve, reject){
-  var request2 = new XMLHttpRequest()
-  request2.addEventListener("load", function() {
-    var list = JSON.parse(request2.responseText).weapons
-    resolve(list)
-  })
-  request2.open("GET", "weapons.json")
-  request2.send()
-})
-
-var promise3 = new Promise(function(resolve, reject){
-  var request3 = new XMLHttpRequest()
-  request3.addEventListener("load", function() {
-    var list = JSON.parse(request3.responseText).rooms
-    resolve(list)
-  })
-  request3.open("GET", "rooms.json")
+  request3.open("GET", "details.json")
   request3.send()
 })
 
 
-/////////////////////////////////////////////////////
-///All the Promises////////////////////////////////////
 
-// Promise.all([promise1, promise2, promise3])
-//   .then(function(values) {
-//     suspects = values[0]
-//     weapons = values[1]
-//     rooms = values[2]
-//     findGuess()
-//   })
+Promise.all([engage01, engage02, engage03])
+  .then(function(values) {
+    categories = values[0]
+    types = values[1]
+    details = values[2]
+    populate()
+  })
 
-function findGuess(){
-  var suspectGuess = suspects[returnRandom(0, 5)].name
-  var weaponGuess = weapons[returnRandom(0, 5)].name
-  var roomGuess = rooms[returnRandom(0, 6)].name
-  console.log(`It was ${suspectGuess} in the ${roomGuess}, with the ${weaponGuess}`)
+
+function populate() {
+  console.log(details)
+  for (var prop in details[0]) {
+  if( details[0].hasOwnProperty( prop ) ) {
+    console.log("obj." + prop + " = " + details[0][prop].name);
+  }
+}
+  // $("#printHere").html(`<div class=""><h4>${details[0].great_basin_sagebrush.name}`)
 }
