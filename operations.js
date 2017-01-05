@@ -52,8 +52,13 @@ function populate() {
     for (var prop in details[t]) {
       if( details[t].hasOwnProperty( prop ) ) {
         var info = details[t][prop]
-        console.log("does this work " + prop + " = " + info.name);
-        console.log(info.type_id);
+        //This line shows only shrubs
+        if(info.type_id === 0 || info.type_id === 1 || info.type_id === 2){
+          var kind = info.type_id
+          var catNum = types[kind].category_id
+          console.log("does this work " + prop + " = " + info.name + "and it's also a " + types[kind].name + "in the " + categories[catNum].name + " category" );
+          console.log(info.type_id);
+        }
       }
     }
   // $("#printHere").html(`<div class=""><h4>${details[0].great_basin_sagebrush.name}`)
