@@ -43,19 +43,20 @@ Promise.all([engage01, engage02, engage03])
     types = values[1]
     details = values[2]
     populate1()
+    $("#catChoice").click(populate1())
   })
 
 
 function populate1() {
   // console.log(details)
   var list = ""
-  
+
   for(var t=0; t<details.length; t++){
     for (var prop in details[t]) {
       if( details[t].hasOwnProperty( prop ) ) {
         var info = details[t][prop]
         //This line shows only shrubs
-        if(info.type_id === 0 || info.type_id === 1 || info.type_id === 2){
+        if((info.type_id === 0 || info.type_id === 1 || info.type_id === 2) && $("#catChoice").value === "shrub"){
           //finds the correct Type
           var kind = info.type_id
           //finds the correct category
