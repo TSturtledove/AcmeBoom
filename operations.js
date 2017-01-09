@@ -48,38 +48,8 @@ Promise.all([engage01, engage02, engage03])
 
 function populate1() {
   // console.log(details)
-  for(var t=0; t<details.length; t++){
-    for (var prop in details[t]) {
-      if( details[t].hasOwnProperty( prop ) ) {
-        var info = details[t][prop]
-        //This line shows only shrubs
-        if(info.type_id === 3 || info.type_id === 4 || info.type_id === 5){
-          //finds the correct Type
-          var kind = info.type_id
-          //finds the correct category
-          var catNum = types[kind].category_id
-          var list
-          list += `<div class="standDiv"><h4>${categories[catNum].name} ${types[kind].name}</h4>
-                                <h3>${info.name}</h3>
-                                <p>${info.description}</p>
-                                </div>`
-          $("#printHere").html(list)
-
-          // $("#printHere").html(`<div class=""><h4>${categories[catNum].name} ${types[kind].name}</h4>
-          //                       <h3>${info.name}</h3>
-          //                       <p>${info.description}</p>
-          //                       </div>`)
-          console.log("does this work " + prop + " = " + info.name + "and it's also a " + types[kind].name + "in the " + categories[catNum].name + " category" );
-          console.log(info.type_id);
-        }
-      }
-    }
-  // $("#printHere").html(`<div class=""><h4>${details[0].great_basin_sagebrush.name}`)
-  }
-}
-
-function populate2() {
-  // console.log(details)
+  var list = ""
+  
   for(var t=0; t<details.length; t++){
     for (var prop in details[t]) {
       if( details[t].hasOwnProperty( prop ) ) {
@@ -90,7 +60,6 @@ function populate2() {
           var kind = info.type_id
           //finds the correct category
           var catNum = types[kind].category_id
-          var list
           list += `<div class="standDiv"><h4>${categories[catNum].name} ${types[kind].name}</h4>
                                 <h3>${info.name}</h3>
                                 <p>${info.description}</p>
@@ -109,3 +78,36 @@ function populate2() {
   // $("#printHere").html(`<div class=""><h4>${details[0].great_basin_sagebrush.name}`)
   }
 }
+
+//
+// function populate2() {
+//   // console.log(details)
+//   for(var t=0; t<details.length; t++){
+//     for (var prop in details[t]) {
+//       if( details[t].hasOwnProperty( prop ) ) {
+//         var info = details[t][prop]
+//         //This line shows only shrubs
+//         if(info.type_id === 3 || info.type_id === 4 || info.type_id === 5){
+//           //finds the correct Type
+//           var kind = info.type_id
+//           //finds the correct category
+//           var catNum = types[kind].category_id
+//           var list
+//           list += `<div class="standDiv"><h4>${categories[catNum].name} ${types[kind].name}</h4>
+//                                 <h3>${info.name}</h3>
+//                                 <p>${info.description}</p>
+//                                 </div>`
+//           $("#printHere").html(list)
+//
+//           // $("#printHere").html(`<div class=""><h4>${categories[catNum].name} ${types[kind].name}</h4>
+//           //                       <h3>${info.name}</h3>
+//           //                       <p>${info.description}</p>
+//           //                       </div>`)
+//           console.log("does this work " + prop + " = " + info.name + "and it's also a " + types[kind].name + "in the " + categories[catNum].name + " category" );
+//           console.log(info.type_id);
+//         }
+//       }
+//     }
+//   // $("#printHere").html(`<div class=""><h4>${details[0].great_basin_sagebrush.name}`)
+//   }
+// }
