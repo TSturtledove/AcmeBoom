@@ -1,0 +1,33 @@
+{
+  "Types": [
+    {
+      "type_id": 0,
+      "category_id": 0,
+      "name": "Evergreen"
+    },
+    {
+      "type_id": 1,
+      "category_id": 0,
+      "name": "Deciduous"
+    },
+    {
+      "type_id": 2,
+      "category_id": 0,
+      "name": "Ornamental"
+    },
+    {
+      "type_id": 3,
+      "category_id": 1,
+      "name": "Evergreen"
+    },
+    {
+      "type_id": 4,
+      "category_id": 1,
+      "name": "Deciduous"
+    },
+    {
+      "type_id": 5,
+      "category_id": 1,
+      "name": "Ornamental"
+    }]
+}
